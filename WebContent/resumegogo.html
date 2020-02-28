@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Resume</title>
+<style>
+body {
+	background-color: #101a1b;
+	color: #efefef;
+	font-family: sans-serif;
+}
+
+a {
+	color: #6495ed;
+}
+
+.content {
+	background-color: #294345;
+	width: 75%;
+	margin: 12%;
+	margin-top: 5em;
+	padding: 15px;
+}
+
+.heading {
+	width: 100%;
+	border-bottom: 1px solid #efefef;
+}
+
+h1 {
+	white-space: nowrap;
+}
+
+.picture {
+	display: inline-block;
+	width: 60%;
+}
+
+.picture>h3 {
+	color: #6495ed;
+}
+
+#headshot {
+	float: left;
+	margin: 10px;
+	border-radius: 32px;
+}
+
+.links {
+	display: inline-block;
+}
+
+.links td:first-child {
+	float: right;
+	font-weight: bold;
+}
+
+.main {
+	width: 100%;
+	display: table-row;
+}
+
+.history {
+	width: 45%;
+	display: table-cell;
+}
+
+.skills {
+	width: 45%;
+	display: table-cell;
+	padding-left: 5%;
+}
+
+.history h2 {
+	background-color: darkslategray;
+}
+
+.history h2:before {
+	content: "\2003";
+	background-color: greenyellow;
+}
+
+.skillbar {
+	display: inline-block;
+	text-align: right;
+	margin-right: -4px;
+	box-shadow: 5px 0px;
+}
+
+.skillbar-blank {
+	display: inline-block;
+	background-color: darkslategray;
+	margin-right: -4px;
+}
+
+.skillbar-blank::after {
+	content: "\a0"
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+.leftfoot {
+	color: white;
+	float: left;
+	text-align: left;
+	padding-right: 250px;
+	padding-left: 5px;
+}
+
+.rightfoot {
+	color: white;
+	float: right;
+	text-align: right;
+	padding-left: 50px;
+	padding-right: 5px;
+}
+
+.foot {
+	text-align: center;
+	padding-left: 70 px;
+}
+</style>
+</head>
+<body>
+	<div class="content">
+		<div class="heading">
+			<div class="picture">
+				<img id="headshot"
+					src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+					height="128" width="128" />
+				<h1>Kevin D. Busch</h1>
+				<h3>Software Developer</h3>
+			</div>
+			<div class="links">
+				<table>
+					<tr>
+						<td>Name</td>
+						<td>Kevin Busch</td>
+					</tr>
+					<tr>
+						<td>Date of Birth</td>
+						<td>December 21st, 1994</td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td>10 Witherell St, Detroit</td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td>+1 (734) 274-0259</td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td>kevinbusch@comcast.net</td>
+					</tr>
+					<tr>
+						<td>GitHub</td>
+						<td><a href="#">Github</a></td>
+					</tr>
+					<tr>
+						<td>LinkedIn</td>
+						<td><a href="https://www.linkedin.com/in/kevindbusch">Linkedin</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="main">
+			<div class="history">
+				<h2>Employment</h2>
+				<h4>Work factory</h4>
+				<h5>worker</h5>
+				<p>Proin non congue sem, non egestas enim. Praesent massa dui,
+					dignissim eget sagittis id, gravida vel diam. Cras suscipit varius
+					vestibulum. Sed eros lacus, suscipit sit amet elementum id, mattis
+					sed mauris. Proin pulvinar, nunc in semper venenatis, ex orci
+					imperdiet elit, vitae tincidunt nisi justo et dolor. Vestibulum
+					consequat est arcu, id faucibus purus congue nec. Nunc ornare
+					ornare bibendum. Vestibulum a est neque.</p>
+				<h4>Place of work</h4>
+				<h5>Slave</h5>
+				<p>Progin somogon hoogan. Sed eros lacus, suscipit sit amet elementum id, mattis
+					sed mauris. Proin pulvinar, nunc in semper venenatis, ex orci
+					imperdiet elit, vitae tincidunt nisi justo et dolor. Vestibulum
+					consequat est arcu, id faucibus purus congue nec. Nunc ornare
+					ornare bibendum. Vestibulum a est neque.</p>
+				<h4></h4>
+
+				<h2>Education</h2>
+				<h4>School</h4>
+				
+				<h4>Father Gabriel Richard High School</h4>
+				<h5>High School Degree</h5>
+				<p>Vivamus vitae volutpat est, vitae tincidunt ante. Maecenas
+					ultricies dui ante, sit amet rhoncus risus malesuada eu. Ut pretium
+					purus nec ligula egestas sollicitudin. Pellentesque sed odio
+					viverra, vulputate ligula sit amet, pellentesque nunc. Vestibulum
+					nec viverra tortor. Etiam ac felis id enim consequat viverra a sit
+					amet tellus. Nullam eu risus vel purus mattis imperdiet.</p>
+			</div>
+			<div class="skills">
+				<h4>Programming Skills</h4>
+				<h6>Java</h6>
+				<div class="skillbar" style="background-color: red; width: 80%">80%</div>
+				<div class="skillbar-blank" style="width: 20%"></div>
+				<h6>JavaScript</h6>
+				<div class="skillbar"
+					style="background-color: lawngreen; width: 75%">75%</div>
+				<div class="skillbar-blank" style="width: 25%"></div>
+				<h6>Bash</h6>
+				<div class="skillbar" style="background-color: orange; width: 50%">50%</div>
+				<div class="skillbar-blank" style="width: 50%"></div>
+				<h6>HTML/CSS</h6>
+				<div class="skillbar" style="background-color: blue; width: 60%">60%</div>
+				<div class="skillbar-blank" style="width: 40%"></div>
+				<h6>Spring Boot</h6>
+				<div class="skillbar" style="background-color: teal; width: 80%">80%</div>
+				<div class="skillbar-blank" style="width: 20%"></div>
+
+				<h4>Soft Skills</h4>
+				<h6>Leadership</h6>
+				<div class="skillbar" style="background-color: silver; width: 60%">60%</div>
+				<div class="skillbar-blank" style="width: 40%"></div>
+				<h6>Teamwork</h6>
+				<div class="skillbar" style="background-color: purple; width: 80%">80%</div>
+				<div class="skillbar-blank" style="width: 20%"></div>
+				<h6>Remeber the name</h6>
+				<div class="skillbar" style="background-color: gold; width: 100%">100%</div>
+				<div class="skillbar-blank" style="width: 0%"></div>
+			</div>
+		</div>
+	</div>
+	<!-- bottom sticky footer -->
+	<div class="footer">
+		<span class="leftfoot">kevinbusch@comcast.net</span> <span
+			class="foot" style="padding-left: 170px;"><a href="https://www.linkedin.com/in/kevindbusch">LinkedIn</a></span>
+		<span class="rightfoot"> (734)274-0259</span>
+
+	</div>
+</body>
+</html>

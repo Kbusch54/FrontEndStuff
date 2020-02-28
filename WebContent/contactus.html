@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+.column {
+	float: left;
+	width: 33%;
+	padding: 30px;
+	height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+</style>
+<title>Contact Us</title>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="home.html"><img src="https://news.northeastern.edu/wp-content/uploads/2018/08/KingHuskyHead.jpg"width="15" ;height="23";></a></li>
+  <li><a href="aboutMe.html">About</a></li>
+  <li><a href="work.html">Work</a></li>
+  <li><a href="blog.html">Blog</a></li>
+</ul>
+	<p>Come and visit our office at:</p>
+	<div class="row">
+		<div class="column">
+
+			<h1>Customer Application</h1>
+			<form action="#">
+
+				<p>
+					<label>Full Name<input type="text" name="name" /></label>
+				</p>
+				<p>
+					<label for="email">Email</label> <input id="email" type="email"
+						name="email" />
+				</p>
+				<p>
+					<label for="pass">Password</label> <input id="pass" type="password"
+						name="p" disabled />
+				</p>
+				<p>
+					<label for="qant">Quantity</label> <input id="qant" type="number"
+						name="ocena" value="0" min="1" max="6" />
+				</p>
+				<p>
+					<label for="dob">Date of birth</label> <input type="date"
+						min="2017-11-30" name="data" />
+				</p>
+				<p>
+					<label for="hour">Hour</label> <input id="hour" type="time"
+						name="wprowadzany_czas" /> <br />
+				</p>
+				<p>
+					<label for="c">Favorite Color</label> <input id="c" type="color"
+						name="ulubiony_kolor" value="#FF00AA" />
+				</p>
+				<input id="sub" type="submit" value="save" />
+
+			</form>
+		</div>
+		<div class="column">
+			<center>
+				<h3>Wolfy the wolf man stan!</h3>
+
+				<a href="home.html" class="current"><img
+					src="https://news.northeastern.edu/wp-content/uploads/2018/08/KingHuskyHead.jpg"
+					width="150" ;height="230";></a>
+
+				<h1>Go Home!</h1>
+			</center>
+
+
+
+		</div>
+		<div class="column">
+			<h1>Options</h1>
+			<form action="#">
+				<label for="message">Tell me everything</label>
+				<textarea cols="50" rows="10"></textarea>
+				<br> <input list="cars" />
+				<datalist id="cars">
+					<option value="BMW" />
+					<option value="Mercedes" />
+					<option value="Bentley" />
+					<option value="Rolls Royce" />
+				</datalist>
+				<br /> <select name="country" id="country">
+					<optgroup label="Europe">
+						<option value="UK">UK</option>
+						<option value="Germany">Germany</option>
+						<option value="Italy">Italy</option>
+					</optgroup>
+					<optgroup label="North America">
+						<option value="USA">USA</option>
+						<option value="mexico">Mexico</option>
+						<option value="Canada">Canada</option>
+					</optgroup>
+				</select> <br /> <input name="submit" type="submit" value="save" />
+			</form>
+		</div>
+	</div>
+</body>
+</html>

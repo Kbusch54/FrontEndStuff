@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border: 5px solid lightskyblue;
+	transition: 10s ease-in 0.1s;
+}
+
+.box:hover {
+	background-color: purple;
+	width: 4000px;
+}
+.radioc label{
+	color: red;
+	transition: 2s ease-in .1s;
+	}
+.radioc input[type="radio"]:checked + label
+{
+	color: blue;
+	}
+	
+	@keyframes flash{
+	0%{
+	background-color: blue;
+	left:0px;
+	top:0px;
+	} 
+	25%{
+	background-color: red;
+	top:0px;
+	left:200px;
+	width: 100px;
+	}
+	50%{
+	background-color: yellow;
+	left:0px;
+	top: 200px;
+	}
+	75%{
+	background-color: green
+	right:200px;
+	top:0px;
+	width: 400px;}
+	100%{
+	background-color: purple;
+	left 200px;
+	top:150px;
+	}
+	}
+	.animated-box{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	animation-name: flash;
+	animation-delay: 1s;
+	animation-iteration-count: 30;
+	animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	position: fixed;
+	top-marign:50px;
+
+	}
+		@keyframes twoBox{
+	0%{
+	background-color: blue;
+	left:0px;
+	top:0px;
+	} 
+	12.5%{
+	background-color: red;
+	top:0px;
+	left:200px;
+	width: 100px;
+	}
+	25%{
+	background-color: yellow;
+	left:0px;
+	top: 200px;
+	}
+	37.5%{
+	background-color: green
+	right:200px;
+	top:0px;
+	width: 400px;}
+	50%{
+	background-color: purple;
+	left 200px;
+	top:150px;
+	}
+	62.5%{
+	background-color: blue;
+	left:300px;
+	bottom:150px;
+	} 
+	75%{
+	background-color: red;
+	bottom:180px;
+	left:250px;
+	width: 180px;
+	}
+	87.5%{
+	background-color: orange;
+	left:0px;
+	top: 100px;
+	}
+	100%{
+	background-color: purple;
+	left 200px;
+	top:150px;}
+	}
+		.animated-boxtwo{
+	width: 200px;
+	height: 200px;
+	top-marign:50px;
+	background-color: blue;
+	animation-name: twoBox;
+	animation-delay: 1s;
+	animation-iteration-count: 11;
+	animation-fill-mode: both;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	position: fixed;
+	
+	}
+	
+	
+		.animated-grow{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	animation-name: fast;
+	animation-delay: 0s;
+	animation-iteration-count: 30;
+	animation-fill-mode: both;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	position: relative;
+	}
+	
+	@keyframes fast{
+	0%{
+	left:100px;
+	} 
+	12.5%{
+	left:200px;
+	width: 75px;
+	height: 75px;
+	}
+	25%{
+	left:300px;
+	width:50px;
+	height: 50px; 
+	}
+	37.5%{
+	left:400;
+	height: 35px;
+	width: 35px;}
+	50%{
+	left 500px;
+	height: 25px;
+	width: 25px;
+	}
+	62.5%{
+	left:600px;
+	width: 35px;
+	height: 35px;
+	} 
+	75%{
+	left:700px;
+	width: 50px;
+	height: 50px;
+	}
+	87.5%{
+	left:800px;
+	height:75px;
+	width:75px;
+	}
+	100%{
+	left 900px;
+	height:100px;
+	width:100px;}
+	}
+	
+	
+	
+</style>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- transition box -->
+	<div class="box">divvy</div>
+
+
+<!-- transition with radio buttons -->
+	<form action="#" class="radioc";>
+		</p>
+		<h4>Please select your temperature:</h4>
+		</p>
+		<input type="radio" name="temp" value="cold" id="cold"/> <label for="cold">Cold</label><br>
+		<input type="radio" name="temp" value="warm" id="warm"/><label for="warm">warm</label><br>
+	</form>
+		
+<div class="animated-box"></div>
+	<div class="animated-boxtwo"></div> 
+
+	<div class="animated-grow"></div>
+
+
+</body>
+</html>
